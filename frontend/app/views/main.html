@@ -1,0 +1,122 @@
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation" ng-init="init()">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">ISKA Demo app</a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<div class="container with-margin-top with-margin-bottom">
+
+  <div class="row">
+    <div class="col-xs-12">
+      <h1>Catalogus</h1>
+      <table class="table table-bordered">
+        <tr>
+          <th>#id</th>
+          <th>Naam</th>
+          <th>Verkoopprijs</th>
+          <th>Voorraad</th>
+        </tr>
+        <tr ng-repeat="catalogus in catalogussen">
+          <td>{{catalogus.id}}</td>
+          <td>{{catalogus.naam}}</td>
+          <td>{{catalogus.verkoopprijs | currency}}</td>
+          <td>{{catalogus.voorraad}}</td>
+        </tr>
+      </table>
+
+      <form class="form-inline" role="form">
+        <div class="form-group">
+          <label class="sr-only" for="naam">Naam</label>
+          <input type="text" class="form-control" id="naam" placeholder="Naam" ng-model="catalogus.naam">
+        </div>
+        <div class="form-group">
+          <label class="sr-only" for="verkoopprijs">Verkoopprijs</label>
+          <input type="number" class="form-control" id="verkoopprijs" placeholder="Verkoopprijs"
+                 ng-model="catalogus.verkoopprijs">
+        </div>
+        <input type="button" class="btn btn-success" value="Toevoegen" ng-click="submitCatalogus()">
+        <label class="text-danger">{{errorMessage}}</label>
+      </form>
+      <hr/>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-6">
+      <h1>Inkoop</h1>
+      <hr/>
+
+      <table class="table table-bordered">
+        <tr>
+          <th class="col-xs-5">Product naam</th>
+          <th class="col-xs-3">Aantal</th>
+          <th class="col-xs-4">Inkoopprijs</th>
+        </tr>
+      </table>
+
+      <div class="row">
+        <div class="col-xs-5">
+          <select class="form-control">
+            <option ng-repeat="catalogus in catalogussen">{{catalogus.naam}}</option>
+          </select>
+        </div>
+        <div class="col-xs-3">
+          <input type="number" class="form-control">
+        </div>
+        <div class="col-xs-4">
+          <input type="number" class="form-control">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <a class="btn btn-info btn-success pull-right" style="margin-top: 10px">Toevoegen</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="col-xs-6">
+      <h1>Verkoop</h1>
+      <hr/>
+
+      <table class="table table-bordered">
+        <tr>
+          <th class="col-xs-8">Product naam</th>
+          <th class="col-xs-4">Aantal</th>
+        </tr>
+      </table>
+
+      <div class="row">
+        <div class="col-xs-8">
+          <select class="form-control">
+            <option ng-repeat="catalogus in catalogussen">{{catalogus.naam}}</option>
+          </select>
+        </div>
+        <div class="col-xs-4">
+          <input type="number" class="form-control">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <a class="btn btn-info btn-success pull-right" style="margin-top: 10px">Toevoegen</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<footer>
+  <hr/>
+  <div class="container">
+    @ ISKA 2014
+  </div>
+</footer>

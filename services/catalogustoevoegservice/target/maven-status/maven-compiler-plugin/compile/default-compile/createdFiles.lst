@@ -1,0 +1,4 @@
+com\iska\catalogus\voegtoe\CatalogusVoegtoeConfig.class
+com\iska\catalogus\voegtoe\CatalogusVoegtoeService.class
+com\iska\catalogus\voegtoe\resource\CatalogusVoegtoeResource.class
+com\iska\catalogus\voegtoe\dao\CatalogusVoegtoeDao.class
