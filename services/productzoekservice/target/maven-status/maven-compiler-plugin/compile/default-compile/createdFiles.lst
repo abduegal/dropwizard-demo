@@ -1,0 +1,4 @@
+com\iska\catalogus\zoek\resource\ProductZoekResource.class
+com\iska\catalogus\zoek\dao\ProductZoekDao.class
+com\iska\catalogus\zoek\ProductZoekService.class
+com\iska\catalogus\zoek\ProductZoekConfig.class

@@ -27,6 +27,11 @@
         <module name="cataloguszoekservice" />
         <module name="frontend" />
         <module name="inkoopservice" />
+        <module name="productinkoopservice" />
+        <module name="producttoevoegservice" />
+        <module name="productverwijderservice" />
+        <module name="productzoekservice" />
+        <module name="sharedlibrary" />
         <module name="verkoopservice" />
       </profile>
     </annotationProcessing>
@@ -36,6 +41,10 @@
       <module name="cataloguszoekservice" target="1.7" />
       <module name="inkoopservice" target="1.7" />
       <module name="iska" target="1.7" />
+      <module name="productinkoopservice" target="1.7" />
+      <module name="producttoevoegservice" target="1.7" />
+      <module name="productverwijderservice" target="1.7" />
+      <module name="productzoekservice" target="1.7" />
       <module name="services" target="1.7" />
       <module name="sharedlibrary" target="1.7" />
       <module name="verkoopservice" target="1.7" />

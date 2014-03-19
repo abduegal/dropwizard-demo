@@ -13,10 +13,9 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>cataloguszoekservice</module>
-        <module>inkoopservice</module>
-        <module>verkoopservice</module>
-        <module>catalogustoevoegservice</module>
+        <module>productzoekservice</module>
+        <module>producttoevoegservice</module>
+        <module>productverwijderservice</module>
     </modules>
 
     <dependencies>

@@ -62,16 +62,23 @@ module.exports = function (grunt) {
     connect: {
       proxies : [
         {
-          context : '/catalogus/zoek' ,
+          context : '/product/zoek' ,
           host : 'localhost' ,
           port : 8080 ,
           https : false ,
           changeOrigin : false
         },
         {
-          context : '/catalogus/voegtoe' ,
+          context : '/product/voegtoe' ,
           host : 'localhost' ,
           port : 8082 ,
+          https : false ,
+          changeOrigin : false
+        },
+        {
+          context : '/product/verwijder' ,
+          host : 'localhost' ,
+          port : 8084 ,
           https : false ,
           changeOrigin : false
         }

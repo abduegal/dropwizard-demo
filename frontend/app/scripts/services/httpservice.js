@@ -3,12 +3,16 @@
 angular.module('frontendApp')
   .service('Httpservice', function Httpservice(Restangular) {
 
-    this.allCatalogus = function(){
-      return Restangular.all('catalogus').all('zoek').getList().$object;
+    this.allProducten = function(){
+      return Restangular.all('product').all('zoek').getList().$object;
     };
 
-    this.newCatalogus = function(){
-      return Restangular.one('catalogus').one('voegtoe');
+    this.newProduct = function(){
+      return Restangular.one('product').one('voegtoe');
+    };
+
+    this.verwijderProduct = function(id){
+      return Restangular.one('product').one('verwijder', id).remove();
     };
 
   });

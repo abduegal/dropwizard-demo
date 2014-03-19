@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/catalogustoevoegservice/catalogustoevoegservice.iml" filepath="$PROJECT_DIR$/catalogustoevoegservice/catalogustoevoegservice.iml" />
-      <module fileurl="file://$PROJECT_DIR$/services/cataloguszoekservice/cataloguszoekservice.iml" filepath="$PROJECT_DIR$/services/cataloguszoekservice/cataloguszoekservice.iml" />
       <module fileurl="file://$PROJECT_DIR$/frontend/frontend.iml" filepath="$PROJECT_DIR$/frontend/frontend.iml" />
-      <module fileurl="file://$PROJECT_DIR$/services/inkoopservice/inkoopservice.iml" filepath="$PROJECT_DIR$/services/inkoopservice/inkoopservice.iml" />
       <module fileurl="file://$PROJECT_DIR$/iska.iml" filepath="$PROJECT_DIR$/iska.iml" />
+      <module fileurl="file://$PROJECT_DIR$/catalogustoevoegservice/producttoevoegservice.iml" filepath="$PROJECT_DIR$/catalogustoevoegservice/producttoevoegservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/services/productverwijderservice/productverwijderservice.iml" filepath="$PROJECT_DIR$/services/productverwijderservice/productverwijderservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/services/productzoekservice/productzoekservice.iml" filepath="$PROJECT_DIR$/services/productzoekservice/productzoekservice.iml" />
       <module fileurl="file://$PROJECT_DIR$/services/services.iml" filepath="$PROJECT_DIR$/services/services.iml" />
       <module fileurl="file://$PROJECT_DIR$/sharedlibrary/sharedlibrary.iml" filepath="$PROJECT_DIR$/sharedlibrary/sharedlibrary.iml" />
-      <module fileurl="file://$PROJECT_DIR$/services/verkoopservice/verkoopservice.iml" filepath="$PROJECT_DIR$/services/verkoopservice/verkoopservice.iml" />
     </modules>
   </component>
 </project>
